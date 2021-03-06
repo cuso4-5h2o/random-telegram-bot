@@ -44,7 +44,7 @@ def command_start(update, context) -> None:
     text = """<b>Commands of This Bot:</b>
 /random: Generate some random text.
 <b>Links:</b>
-<a href="https://github.com/cuso4-5h2o/simple-random-bot">Source code</a> <a href="https://pi3k-akt.lofter.com/post/1f0804ed_1c7a995f7">Avatar source</a>"""
+<a href="https://github.com/cuso4-5h2o/simple-random-bot">Source code</a>, <a href="https://pi3k-akt.lofter.com/post/1f0804ed_1c7a995f7">Avatar source</a>"""
     context.bot.send_message(chat_id=chat.id,
                              text=text,
                              parse_mode=ParseMode.HTML,
