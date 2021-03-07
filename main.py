@@ -59,7 +59,7 @@ def command_random(update, context) -> None:
 <i>Hint: In order to prevent the physical address from leaking, <code>8000000000</code> will be used as the node number in UUID v1 mode, and only one can be generated at a time in that mode as well.</i>"""
     reply_markup = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("UUID v1", callback_data="random:20:u1"),
+            InlineKeyboardButton("UUID v1", callback_data="random:1:u1"),
             InlineKeyboardButton("UUID v4", callback_data="random:20:u4")
         ],
         [
