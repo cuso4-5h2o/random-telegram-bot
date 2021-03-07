@@ -49,7 +49,7 @@ def command_start(update, context) -> None:
                              text=text,
                              parse_mode=ParseMode.HTML,
                              disable_web_page_preview=True)
-    log_with_user(user, "asked for help.")
+    log_with_user(user, "started this bot.")
 
 
 def command_random(update, context) -> None:
