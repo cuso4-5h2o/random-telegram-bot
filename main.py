@@ -59,26 +59,26 @@ def command_random(update, context) -> None:
 <i>Hint: In order to prevent the physical address from leaking, <code>8000000000</code> will be used as the node number in UUID v1 mode, and only one can be generated at a time in that mode as well.</i>"""
     reply_markup = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("UUID v1", callback_data="random:1:u1"),
-            InlineKeyboardButton("UUID v4", callback_data="random:1:u4")
+            InlineKeyboardButton("UUID v1", callback_data="random:20:u1"),
+            InlineKeyboardButton("UUID v4", callback_data="random:20:u4")
         ],
         [
-            InlineKeyboardButton("6 digits", callback_data="random:1:6d"),
-            InlineKeyboardButton("12 digits", callback_data="random:1:12d"),
-            InlineKeyboardButton("16 digits", callback_data="random:1:16d")
+            InlineKeyboardButton("6 digits", callback_data="random:20:6d"),
+            InlineKeyboardButton("12 digits", callback_data="random:20:12d"),
+            InlineKeyboardButton("16 digits", callback_data="random:20:16d")
         ],
         [
-            InlineKeyboardButton("6 hex digits", callback_data="random:1:6hd"),
+            InlineKeyboardButton("6 hex digits", callback_data="random:20:6hd"),
             InlineKeyboardButton(
-                "12 hex digits", callback_data="random:1:12hd")
+                "12 hex digits", callback_data="random:20:12hd")
         ],
         [
             InlineKeyboardButton("8 digits or letters (a-z)",
-                                 callback_data="random:1:8daz")
+                                 callback_data="random:20:8daz")
         ],
         [
             InlineKeyboardButton("16 digits or letters (A-z)",
-                                 callback_data="random:1:16dAz")
+                                 callback_data="random:20:16dAz")
         ]
     ])
     context.bot.send_message(chat_id=chat.id,
